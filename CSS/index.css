@@ -1,0 +1,159 @@
+/* ======= Global ======= */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: url('../IMAGES/fond.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: black;
+    text-align: center;
+}
+
+.accroche {
+    font-style: italic;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* ======= Header ======= */
+header {
+    position: sticky;
+    top: 0;
+    margin-bottom: 2rem;    
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(193, 144, 76);
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#logo {
+    height: 3rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a.border {
+    color: black;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a.border:hover {
+    background-color: #fff;
+    color: rgb(193, 144, 76);
+}
+
+/* ======= Section ======= */
+section {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0.625rem;
+    padding: 2rem;
+    max-width: 45rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.15);
+}
+
+/* ======= Résumé des pages ======= */
+.page-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.page-card {
+    background-color: rgba(255,255,255,0.1);;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.15);
+    padding: 1rem 1.5rem;
+    max-width: 20rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.page-card:hover {
+    transform: scale(1.03);
+    background-color: rgba(193,144,76,0.1);
+}
+
+.page-card h3 {
+    margin-top: 0;
+    color: rgb(193,144,76);
+}
+
+.page-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.page-card a:hover {
+    color: rgb(193,144,76);
+}
+
+/* ======= Footer ======= */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(193, 144, 76);
+    font-weight: bold;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 48rem) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo {
+        margin: 0 auto 1rem auto;
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
