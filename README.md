@@ -1,4 +1,5 @@
 # Projet Site InovTech
+Site en ligne : https://aicha019.github.io/siteBic/
 
 **Projet réalisé dans le cadre de la formation DSP DevOps au CNAM**.  
 Ce projet a été un **travail de groupe de 3 personnes** :  
