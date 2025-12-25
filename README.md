@@ -61,4 +61,3 @@ IMAGES/Images utilisées sur le site
 ---
 
 **Ce projet fait partie de mon portfolio DSP DevOps et illustre la mise en pratique de la création de sites web en équipe.**
-# site-Bic
